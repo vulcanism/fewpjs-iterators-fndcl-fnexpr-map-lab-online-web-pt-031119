@@ -14,7 +14,7 @@ const tutorials = [
 const titleCased = () => {
   return tutorials.map(string => {
     const text = string.split(" ")
-    const capitals = text.map(text => text.charAt(0).toUpperCase())
+    const capitals = text.map(text => text.charAt(0).toUpperCase() + text.slice(1))
     const newText = capitals.join(" ")
     return newText
   })
